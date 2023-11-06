@@ -1,0 +1,123 @@
+.header__wrap {
+    flex-direction: row-reverse;
+}
+.switch__lang {
+    right: auto;
+    left: 0;
+}
+
+.flag {
+    margin: 0 0 0 10px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    left: 0;
+    right: auto;
+}
+
+.select2-selection__rendered span, .select2-results__option span {
+    flex-direction: row-reverse;
+}
+
+.screen__title {
+    direction: rtl;
+}
+
+.screen__text {
+    direction: rtl;
+}
+
+.stat__text {
+    direction: rtl;
+}
+
+.atention__text {
+    direction: rtl;
+}
+
+.dive__title {
+    direction: rtl;
+}
+
+.form {
+    direction: rtl;
+}
+
+.form .iti {
+    direction: ltr;
+}
+
+#form__give {
+    direction: ltr;
+}
+
+#card_number,
+#card_password {
+    direction: ltr;
+}
+
+.buttons {
+    direction: ltr;
+}
+
+.iti__selected-flag {
+    direction: ltr;
+}
+
+.iti__country-list {
+    left: 0;
+}
+
+.iti__country {
+    direction: ltr;
+}
+
+.footer__social {
+    flex-direction: row-reverse;
+}
+
+.footer__social li {
+    margin: 0 0 0 30px;
+}
+
+.footer__link {
+    flex-direction: row-reverse;
+    text-align: end;
+}
+
+.footer__link svg {
+    margin: 0 0 0 10px;
+}
+
+.footer__row {
+    direction: rtl;
+}
+
+.footer__nav--list li a {
+    padding: 0 15px 0 0;
+}
+
+.footer__nav--list li a::before {
+    left: auto;
+    right: 0;
+}
+
+.thank__text {
+    direction: rtl;
+}
+
+@media screen and (max-width: 560px) {
+    .button {
+        margin: 0;
+    }
+
+    .footer__social {
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: end;
+    }
+
+    .footer__social li {
+        margin: 0 0 10px 0;
+    }
+}

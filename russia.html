@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iWin | Donate to israeli families</title>
+    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <a href="/" class="header__logo">
+                    <img src="assets/images/logo.png" alt="">
+                </a>
+
+                <div class="switch__lang">
+                    <select class="language-select">
+                        <option value="en" data-image="assets/images/country/UK.svg">
+                            English
+                        </option>
+                        <option value="he" data-image="assets/images/country/Israel.svg">
+                            Hebrew
+                        </option>
+                        <option value="ru" selected data-image="assets/images/country/Russia.svg">
+                            Russian
+                        </option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main ">
+
+        <section class="screen">
+            <div class="container">
+                <h1 class="screen__title">
+                    ПОЖЕРТВОВАНИЕ ИЗРАИЛЬСКИМ СЕМЬЯМ И ЦАХАЛУ
+                </h1>
+                <div class="news">
+                    <div class="news__org">
+                        <img class="org__logo" src="assets/images/avi/avi.png" alt="">
+                        <h3 class="org__name">aliance of volunteers in israel</h3>
+                    </div>
+                    <div class="news__video">
+                        <iframe width="100%" height="500" autoplay
+                            src="https://www.youtube.com/embed/zmWOJBo5MZA?si=v8kMm7eeoKhILorv&autoplay=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen muted>
+                        </iframe>
+                    </div>
+                    <div class="news__org">
+                        <img src="assets/images/ksenia.png" alt="">
+                        <div class="">
+                            <h4 class="volunteer">Ксения Фигурова</h4>
+                            <p class="news__text">Активистка в новом иммигрантском сообществе. Репатриировалась в 2016
+                                году из Беларуси.
+                                Работает в сфере рекламы и занимается связью с общественностью. Консультировала
+                                депутатов
+                                Кнессета 23-его созыва в сфере работы с русскоязычной общиной
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p class="screen__text">
+                    AVI (альянс волонтёров в Израиле) объединила всех желающих помочь пострадавшим от военных действий,
+                    жителям Юга и севера, солдатам израильской армии, а так же для маленьких детей потерявших своих
+                    родителей в результате жестокого нападения на Израильские поселения в приграничных районах Газы.
+                </p>
+                <div class="stat">
+                    <p class="stat__text">
+                        <span>9,895,874₪</span> было собрано <b>12 896 донорами</b>.
+                    </p>
+                </div>
+                <div class="atention">
+                    <p class="atention__text">
+                        Не оставайтесь равнодушными, любая сумма поможет спасти жизнь ребенку, солдату, отцу или матери, бабушке или дедушке в это тяжелое время
+                    </p>
+                </div>
+                <div class="slider__wrap">
+                    <ul class="slider__list" id="slider__list">
+                        <li class="slider__item">
+                            <img src="assets/images/damage/img7.jpg" alt="">
+                        </li>
+                        <li class="slider__item">
+                            <img src="assets/images/damage/img8.jpg" alt="">
+                        </li>
+                        <li class="slider__item">
+                            <img src="assets/images/damage/img9.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="give">
+            <div class="container">
+                <h2 class="dive__title">
+                    Я хочу Пожертвовать
+                </h2>
+                <form action="" class="form">
+                    <input class="input" type="number" id="form__give">
+                    <div class="buttons">
+                        <button class="button" type="button" onclick="copyValue(75)">₪75</button>
+                        <button class="button" type="button" onclick="copyValue(125)">₪125</button>
+                        <button class="button" type="button" onclick="copyValue(250)">₪250</button>
+                        <button class="button" type="button" onclick="copyValue(500)">₪500</button>
+                        <button class="button" type="button" onclick="copyValue(1000)">₪1000</button>
+                    </div>
+                    <label for="card_phone">
+                        Номер телефона
+                        <input class="input" type="tel" id="card_phone" required placeholder="Ваш телефон">
+                    </label>
+                    <label for="card_holder">
+                        Владелец карты
+                        <input class="input" type="text" id="card_holder" required placeholder="Имя и фамилия на карте">
+                    </label>
+                    <label for="card_number">
+                        Номер карты
+                        <input class="input" type="number" id="card_number" maxlength="12" required
+                            placeholder="**** **** **** **** ">
+                        <p id="card_number_error" class="error_message" style="display: none; color: red;">
+                            Пожалуйста, введите действительный номер кредитной карты.
+                        </p>
+                    </label>
+                    <label for="valid_until ">
+                        Годен до
+                        <div class="form__wrap">
+                            <select class="input" id="monthSelect">
+                                <option value="month" selected disabled>Месяц</option>
+                                <option value="1">Январь</option>
+                                <option value="2">Февраль</option>
+                                <option value="3">Март</option>
+                                <option value="4">Апрель</option>
+                                <option value="5">Май</option>
+                                <option value="6">Июнь</option>
+                                <option value="7">Июль</option>
+                                <option value="8">Август</option>
+                                <option value="9">Сентябрь</option>
+                                <option value="10">Октябрь</option>
+                                <option value="11">Ноябрь</option>
+                                <option value="12">Декабрь</option>
+                            </select>
+                            <select class="input" id="yearSelect">
+                                <option value="year" selected disabled>Год</option>
+                                <option value="1940">1940</option>
+                                <option value="1941">1941</option>
+                                <!-- Продолжайте добавлять опции для каждого года до текущего года -->
+                                <option value="2023">2023</option>
+                            </select>
+                        </div>
+                    </label>
+                    <input class="input" type="number" name="card_password" id="card_password" maxlength="3" required
+                        placeholder="***">
+                    <input class="form__button" type="submit" value="Отправить платеж">
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+
+            <ul class="footer__social">
+                <li>
+                    <a href="tel:+972559661334" class="footer__link">
+                        <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="1em">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M19.41,13c-.22,0-.45-.07-.67-.12a9.86,9.86,0,0,1-1.31-.39,2,2,0,0,0-2.48,1l-.22.46a13.17,13.17,0,0,1-2.67-2,13.17,13.17,0,0,1-2-2.67l.46-.21a2,2,0,0,0,1-2.48,10.47,10.47,0,0,1-.39-1.32c-.05-.22-.09-.45-.12-.67a3,3,0,0,0-3-2.49H5a3,3,0,0,0-2.24,1,3,3,0,0,0-.73,2.4,19.07,19.07,0,0,0,5.41,11,19.07,19.07,0,0,0,11,5.41,2.56,2.56,0,0,0,.39,0,3,3,0,0,0,2-.76,3,3,0,0,0,1-2.24v-3A3,3,0,0,0,19.41,13Zm.49,6a1,1,0,0,1-.33.74,1,1,0,0,1-.82.25,17.16,17.16,0,0,1-9.87-4.84A17.16,17.16,0,0,1,4,5.25a1,1,0,0,1,.25-.82A1,1,0,0,1,5,4.1h3a1,1,0,0,1,1,.78c0,.27.09.55.15.82a11,11,0,0,0,.46,1.54l-1.4.66a1,1,0,0,0-.52.56,1,1,0,0,0,0,.76,14.49,14.49,0,0,0,7,7,1,1,0,0,0,.76,0,1,1,0,0,0,.56-.52l.63-1.4a12.41,12.41,0,0,0,1.58.46c.26.06.54.11.81.15a1,1,0,0,1,.78,1ZM14,2c-.23,0-.47,0-.7,0a1,1,0,0,0,.17,2L14,4a6,6,0,0,1,6,6c0,.18,0,.35,0,.53a1,1,0,0,0,.91,1.08h.08a1,1,0,0,0,1-.91c0-.23,0-.47,0-.7A8,8,0,0,0,14,2Zm2,8a1,1,0,0,0,2,0,4,4,0,0,0-4-4,1,1,0,0,0,0,2A2,2,0,0,1,16,10Z">
+                                </path>
+                            </g>
+                        </svg>
+                        +972 55-966-1334
+                        <br>
+                        Обслуживание клиентов
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.iwin.co.il/ru/lottery-support" class="footer__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+                        </svg>
+                        Написать нам
+                    </a>
+                </li>
+                <li>
+                    <a href="/" class="footer__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M88.2 309.1c9.8-18.3 6.8-40.8-7.5-55.8C59.4 230.9 48 204 48 176c0-63.5 63.8-128 160-128s160 64.5 160 128s-63.8 128-160 128c-13.1 0-25.8-1.3-37.8-3.6c-10.4-2-21.2-.6-30.7 4.2c-4.1 2.1-8.3 4.1-12.6 6c-16 7.2-32.9 13.5-49.9 18c2.8-4.6 5.4-9.1 7.9-13.6c1.1-1.9 2.2-3.9 3.2-5.9zM0 176c0 41.8 17.2 80.1 45.9 110.3c-.9 1.7-1.9 3.5-2.8 5.1c-10.3 18.4-22.3 36.5-36.6 52.1c-6.6 7-8.3 17.2-4.6 25.9C5.8 378.3 14.4 384 24 384c43 0 86.5-13.3 122.7-29.7c4.8-2.2 9.6-4.5 14.2-6.8c15.1 3 30.9 4.5 47.1 4.5c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176zM432 480c16.2 0 31.9-1.6 47.1-4.5c4.6 2.3 9.4 4.6 14.2 6.8C529.5 498.7 573 512 616 512c9.6 0 18.2-5.7 22-14.5c3.8-8.8 2-19-4.6-25.9c-14.2-15.6-26.2-33.7-36.6-52.1c-.9-1.7-1.9-3.4-2.8-5.1C622.8 384.1 640 345.8 640 304c0-94.4-87.9-171.5-198.2-175.8c4.1 15.2 6.2 31.2 6.2 47.8l0 .6c87.2 6.7 144 67.5 144 127.4c0 28-11.4 54.9-32.7 77.2c-14.3 15-17.3 37.6-7.5 55.8c1.1 2 2.2 4 3.2 5.9c2.5 4.5 5.2 9 7.9 13.6c-17-4.5-33.9-10.7-49.9-18c-4.3-1.9-8.5-3.9-12.6-6c-9.5-4.8-20.3-6.2-30.7-4.2c-12.1 2.4-24.7 3.6-37.8 3.6c-61.7 0-110-26.5-136.8-62.3c-16 5.4-32.8 9.4-50 11.8C279 439.8 350 480 432 480z" />
+                        </svg>
+                        Живой чат
+                    </a>
+                </li>
+            </ul>
+
+            <div class="footer__row">
+
+                <div class="footer__col">
+                    <h4 class="footer__title">ПОЛЕЗНЫЕ ССЫЛКИ</h4>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav--list">
+                            <li><a href="https://www.iwin.co.il/ru/">Главная</a></li>
+                            <li><a href="https://www.iwin.co.il/ru/lottery-smart-play">Smart Play</a></li>
+                            <li><a href="https://www.iwin.co.il/ru/lottery-winners">Lottery Results &amp; Winners</a>
+                            </li>
+                            <li><a href="https://www.iwin.co.il/ru/promotions.aspx">Lottery Promotions</a></li>
+                            <li><a href="https://www.iwin.co.il/ru/about-us">О нас</a></li>
+                            <li><a href="https://www.iwin.co.il/ru/lottery-support">Помощь и поддержка</a></li>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title none">&nbsp;</h4>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav--list">
+                            <li><a href="https://www.iwin.co.il/ru/terms.aspx">Правила и условия</a></li>
+                            <li><a href="https://www.iwin.co.il/ru/security.aspx">Безопасность</a></li>
+                            <li><a href="https://www.iwin.co.il/ru/privacy.aspx">Политика конфиденциальности</a></li>
+                            <li><a href="https://www.iwin.co.il/ru/acceptablepolicy.aspx">Условия использования</a></li>
+                            <li><a href="https://www.iwin.co.il/ru/usepolicy.aspx">Правила пользования вебсайтом</a>
+                            </li>
+                            <li><a href="http://www.ismartwinners.com/ru/" target="_blank">Партнерская программа</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Методы оплаты</h4>
+                    <nav class="footer__nav">
+                        <ul class="footer__payment--list">
+                            <img class="payments " src="assets/images/payment/visa.png" alt="">
+                            <img class="payments " src="assets/images/payment/skrill.png" alt="">
+                            <img class="payments " src="assets/images/payment/diners.png" alt="">
+                            <img class="payments " src="assets/images/payment/mastercard.png" alt="">
+                            <img class="payments " src="assets/images/payment/qiwi.png" alt="">
+                            <img class="payments " src="assets/images/payment/hsbc.png" alt="">
+                            <img class="payments " src="assets/images/payment/maestro.png" alt="">
+                            <img class="payments " src="assets/images/payment/bitcoin.png" alt="">
+                            <img class="payments " src="assets/images/payment/litecoin.png" alt="">
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Безопасность и доверие</h4>
+                    <nav class="footer__nav">
+                        <ul class="footer__payment--list">
+                            <img class="security " src="assets/images/payment/ctv.png" alt="">
+                            <img class="security " src="assets/images/payment/comodo.png" alt="">
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="copyright">© 2015 SmartWinners Lottery online and lottery results. All Rights Reserved</p>
+        </div>
+
+
+
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>
